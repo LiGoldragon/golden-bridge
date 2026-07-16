@@ -1,0 +1,29 @@
+[package]
+name         = "golden-bridge"
+version      = "0.1.0"
+edition      = "2024"
+rust-version = "1.85"
+license      = "MIT OR Apache-2.0"
+repository   = "https://github.com/LiGoldragon/golden-bridge"
+description  = "The golden bridge: ingest legacy schema-language source into the new stringless CoreSchema + NameTable model, then migrate one real type-schema fixture through the whole next-generation vertical (CoreSchema -> core-nomos macros -> CoreLogos -> TextualRust -> Rust) and byte-compare against the real legacy generated Rust. Leg one: newtypes and structs over scalar and plain references; every construct beyond that is a loud typed error."
+publish      = false
+
+[lib]
+name = "golden_bridge"
+path = "src/lib.rs"
+
+[dependencies]
+name-table  = { git = "https://github.com/LiGoldragon/name-table.git", rev = "c3237f77c087e6feab49d6cf34971cebc14a11e6" }
+core-schema = { git = "https://github.com/LiGoldragon/core-schema.git", rev = "566544eda56a52fb1b5185d8c634dd9a9f2a47e0" }
+schema-language = { git = "https://github.com/LiGoldragon/schema-language.git", rev = "59d59aca5767523a929e5bd6fcd011a4a4e8ff23" }
+thiserror   = "2"
+
+[dev-dependencies]
+core-nomos   = { git = "https://github.com/LiGoldragon/core-nomos.git", rev = "88a1ecf55272" }
+core-logos   = { git = "https://github.com/LiGoldragon/core-logos.git", rev = "17cbd7596df2" }
+textual-rust = { git = "https://github.com/LiGoldragon/textual-rust.git", rev = "b0ea9fb61495" }
+
+[lints.rust]
+unsafe_code = "forbid"
+unused      = { level = "warn", priority = -1 }
+dead_code   = "warn"
