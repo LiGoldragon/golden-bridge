@@ -98,7 +98,7 @@ dependencies = [
 [[package]]
 name = "core-logos"
 version = "0.1.0"
-source = "git+https://github.com/LiGoldragon/core-logos.git?rev=17cbd7596df2#17cbd7596df203e0717fe079b7688cc60ec05e4b"
+source = "git+https://github.com/LiGoldragon/core-logos.git?rev=2b9ed8fb758de951a76af35a65b4b53b9d210583#2b9ed8fb758de951a76af35a65b4b53b9d210583"
 dependencies = [
  "content-identity",
  "name-table",
@@ -109,20 +109,21 @@ dependencies = [
 [[package]]
 name = "core-nomos"
 version = "0.1.0"
-source = "git+https://github.com/LiGoldragon/core-nomos.git?rev=88a1ecf55272#88a1ecf552727b2037263423da8a4af0e65619e1"
+source = "git+https://github.com/LiGoldragon/core-nomos.git?rev=7c50f5283580f1552a60714e242340410f5b6dc1#7c50f5283580f1552a60714e242340410f5b6dc1"
 dependencies = [
  "content-identity",
  "core-logos",
  "core-schema",
  "name-table",
  "rkyv",
+ "textual-rust",
  "thiserror",
 ]
 
 [[package]]
 name = "core-schema"
 version = "0.1.0"
-source = "git+https://github.com/LiGoldragon/core-schema.git?rev=566544eda56a52fb1b5185d8c634dd9a9f2a47e0#566544eda56a52fb1b5185d8c634dd9a9f2a47e0"
+source = "git+https://github.com/LiGoldragon/core-schema.git?rev=d3cdee9ac2c17de16a7745c9854344d8bbcde64e#d3cdee9ac2c17de16a7745c9854344d8bbcde64e"
 dependencies = [
  "content-identity",
  "name-table",
@@ -450,7 +451,7 @@ dependencies = [
 [[package]]
 name = "textual-rust"
 version = "0.1.0"
-source = "git+https://github.com/LiGoldragon/textual-rust.git?rev=b0ea9fb61495#b0ea9fb61495f26629f5522ce26c79a4af3a31f2"
+source = "git+https://github.com/LiGoldragon/textual-rust.git?rev=ee7859ff10b0710fab9e87672c66d8c889b67c63#ee7859ff10b0710fab9e87672c66d8c889b67c63"
 dependencies = [
  "content-identity",
  "core-logos",

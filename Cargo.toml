@@ -14,14 +14,14 @@ path = "src/lib.rs"
 
 [dependencies]
 name-table  = { git = "https://github.com/LiGoldragon/name-table.git", rev = "c3237f77c087e6feab49d6cf34971cebc14a11e6" }
-core-schema = { git = "https://github.com/LiGoldragon/core-schema.git", rev = "566544eda56a52fb1b5185d8c634dd9a9f2a47e0" }
+core-schema = { git = "https://github.com/LiGoldragon/core-schema.git", rev = "d3cdee9ac2c17de16a7745c9854344d8bbcde64e" }
 schema-language = { git = "https://github.com/LiGoldragon/schema-language.git", rev = "59d59aca5767523a929e5bd6fcd011a4a4e8ff23" }
 thiserror   = "2"
 
 [dev-dependencies]
-core-nomos   = { git = "https://github.com/LiGoldragon/core-nomos.git", rev = "88a1ecf55272" }
-core-logos   = { git = "https://github.com/LiGoldragon/core-logos.git", rev = "17cbd7596df2" }
-textual-rust = { git = "https://github.com/LiGoldragon/textual-rust.git", rev = "b0ea9fb61495" }
+core-nomos   = { git = "https://github.com/LiGoldragon/core-nomos.git", rev = "7c50f5283580f1552a60714e242340410f5b6dc1" }
+core-logos   = { git = "https://github.com/LiGoldragon/core-logos.git", rev = "2b9ed8fb758de951a76af35a65b4b53b9d210583" }
+textual-rust = { git = "https://github.com/LiGoldragon/textual-rust.git", rev = "ee7859ff10b0710fab9e87672c66d8c889b67c63" }
 
 [lints.rust]
 unsafe_code = "forbid"
